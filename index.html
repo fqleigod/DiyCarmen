@@ -22,7 +22,7 @@
         #videoContainer {
             position: relative;
             width: 380px;
-            height: 500px; /* Fixed height for video and image */
+            height: 520px; /* Fixed height for video and image */
             overflow: hidden; /* Hide overflow content */
             background-color: black;
         }
@@ -68,7 +68,7 @@
         <video id="videoElement" autoplay playsinline></video>
         <img id="imageElement" style="display:none;">
         <div id="watermark" style="margin-bottom: -16.3px;">
-            <img src="bj.png" style="position: initial;width: 380px;margin-bottom: -113.3px;margin-left: -15px;">
+            <img src="bj.png" style="position: initial;width: 380px;margin-bottom: -115px;margin-left: -15px;">
             <div id="time"></div>
             <div id="watermarkTextb" style="transform: scaleX(0.9);padding-top: 8px;margin-left: -10px;padding-bottom: 1px;letter-spacing: 0.1px;font-weight: bold;">广东省东莞市虎门镇</div>
             <div id="watermarkTextc" style="padding-bottom: 19px;padding-left: 10px;letter-spacing: 0px;">获取中</div>
@@ -112,7 +112,7 @@
             var dayOfWeek = days[currentDate.getDay()];
             var formattedDate = year + "." + month + "." + day + " " + dayOfWeek;
             $("#watermarkTextc").text(formattedDate);
-            $("#watermarkInputb").val('广东省广州市白云区龙井西路4号');
+            $("#watermarkInputb").val('淮安市淮安区');
             $("#watermarkInputc").val(formattedDate);
             $('#startCamera').click(function () {
                 $('#imageElement').hide();
